@@ -2,7 +2,8 @@
 This is a portfolio project for the Codecademy Fullstack-Engineer Career Path.
 
 
-![_624f4cf5-9b83-4694-a7b7-f88910141afe](https://github.com/AdrianLesch/FanatsyNameGenerator-MixedMessages/assets/138780311/b44431ba-4b0d-45e1-8a00-9ea53ed0f86d)
+![_624f4cf5-9b83-4694-a7b7-f88910141afe](https://github.com/AdrianLesch/FanatsyNameGenerator---MixedMessages/assets/138780311/c9a596e9-caef-42c2-af07-512dc9ae2d17)
+
 
 
 Fantasy Name Generator & Mixed Messages // A Codecademy Portfolio Project
