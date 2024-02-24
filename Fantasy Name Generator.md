@@ -26,7 +26,7 @@ Additional I want to combine this with a Mixed Message Generator, where the name
 #### First Steps
 1. Create arrays of sur- and last-Names //check
 2. Create a randomizer function to combine a first name and a last name out of the according arrays //check
-3. Create a function to create a random greeting message where the name is included
+3. Create a function to create a random greeting message where the name is included //check
 
 #### Extended Scope
 4. Create a function to create a random name out of Syllables
