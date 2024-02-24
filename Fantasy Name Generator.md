@@ -24,10 +24,13 @@ I started to build a Fantasy Name Generator with Java once to use it for charact
 Additional I want to combine this with a Mixed Message Generator, where the names will be used.
 
 #### First Steps
-1. Create arrays of sur- and last-Names
-2. Create a randomizer function to combine a first name and a last name out of the according arrays
+1. Create arrays of sur- and last-Names //check
+2. Create a randomizer function to combine a first name and a last name out of the according arrays //check
 3. Create a function to create a random greeting message where the name is included
 
 #### Extended Scope
 4. Create a function to create a random name out of Syllables
 5. Create a message where an input is required to choose if you want a male, female, or genderless name -> Message should be like "Greetings fellow traveler, pleace chose thy sex >> Now chose if you want to have an existing name or a completely random name
+
+
+

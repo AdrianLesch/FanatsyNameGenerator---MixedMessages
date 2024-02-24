@@ -7,3 +7,18 @@ const firstNames = ['Zara', 'Tharion', 'Kira', 'Ragnor',
 const lastNames = ['Moonshadow', 'Stormbringer', 'Brightflame', 'Ironfist', 'Silverleaf', 'Sunstrider', 'Nightfall', 'Swiftwind',
 'Fireheart', 'Starlight', 'Blackthorn', 'Lightbringer', 'Shadowflame', 'Emberstone', 'Greenbottle', 'Silvermoon', 'Moonbeam',
 'LeBeau', 'Dawnflower', 'Stormchaser'];
+
+const greetword = 
+
+//Second we create a randomize function
+
+const randomIterate = (namesArray) => {
+    return(namesArray[Math.floor(Math.random() * namesArray.length)]);
+}
+
+const combineNames = () => {
+    let combindedName = randomIterate(firstNames) + ' ' + randomIterate(lastNames);
+    return combindedName;
+}
+
+
