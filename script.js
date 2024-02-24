@@ -1,4 +1,4 @@
-//First we need some arrays of names
+//First we need some arrays of names etc...
 
 const firstNames = ['Zara', 'Tharion', 'Kira', 'Ragnor',
  'Lila', 'Nala', 'Varis', 'Mara', 'Kato', 'Elora', 'Darius', 'Sora', 'Zane', 'Fira', 'Milo',
@@ -22,7 +22,7 @@ const randomIterate = (Array) => {
     return(Array[Math.floor(Math.random() * Array.length)]);
 }
 
-
+//Now we put the message together with a function
 //Example sentence would be `randomIterate(greetWord) randomIterate(firstNames) randomIterade(lastNames), randomIterade(verbs) the randomIterade(monsters) and randomIterate(verbs) the randomIterate(objects)!`
 const randomMessage = () => {
     console.log(`${randomIterate(greetWord)} ${randomIterate(firstNames)} ${randomIterate(lastNames)}, ${randomIterate(verbs)} the ${randomIterate(monsters)} and ${randomIterate(verbs)} the ${randomIterate(objects)}!`);
