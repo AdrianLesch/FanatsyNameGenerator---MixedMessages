@@ -28,4 +28,24 @@ const randomMessage = () => {
     console.log(`${randomIterate(greetWord)} ${randomIterate(firstNames)} ${randomIterate(lastNames)}, ${randomIterate(verbs)} the ${randomIterate(monsters)} and ${randomIterate(verbs)} the ${randomIterate(objects)}!`);
 }
 
-randomMessage();
+//randomMessage();
+
+
+//EXTENDED SCOPE SECTION
+
+//Challenge is to create a function to create a random name like "Sassesuka Pilopa"
+
+
+const create randomName = () => {
+    const alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+    let newFirstName = [];
+    let newLastName = [];
+
+
+}
+
+
+/* Idea to achieve that:
+Create a function where we combine different syllables (up to 5 per first and last name) including double letters.
+Rule is that the first character of each first and last name need to be uppercase. I could create a loop where the amount of times it should loop is defined by a randomizer.
+If I restrict myself to a max of 5 syllables per name that would make a number between 2 and 10 characters.*/
