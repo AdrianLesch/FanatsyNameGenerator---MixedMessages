@@ -34,18 +34,37 @@ const randomMessage = () => {
 //EXTENDED SCOPE SECTION
 
 //Challenge is to create a function to create a random name like "Sassesuka Pilopa"
-
-
-const create randomName = () => {
-    const alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
-    let newFirstName = [];
-    let newLastName = [];
-
-
-}
-
-
 /* Idea to achieve that:
 Create a function where we combine different syllables (up to 5 per first and last name) including double letters.
 Rule is that the first character of each first and last name need to be uppercase. I could create a loop where the amount of times it should loop is defined by a randomizer.
 If I restrict myself to a max of 5 syllables per name that would make a number between 2 and 10 characters.*/
+
+const randomName = () => {
+
+    const alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+    const extraVowels = ['a', 'e', 'i', 'o', 'u'];
+    
+    //Random iteration no. for name creation with min of 2 character and max of 10 chars
+    const randomNum = Math.floor((Math.random() * 5));
+
+    let newFirstName = [];
+    let newLastName = [];
+
+   for (let i = 0; i <= randomNum; i++){
+        newFirstName.push(randomIterate(alphabet) + randomIterate(extraVowels));
+    }
+    
+
+    //WIP WIP WIP WIP
+    console.log(newFirstName);
+    let firstCharUp = newFirstName[0][0].toUpperCase();
+    //newFirstName.splice(0, 1, firstCharUp);
+    newFirstName.map(firstCharUp);
+    console.log(newFirstName);
+    
+
+}
+
+randomName();
+
+
