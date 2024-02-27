@@ -1,5 +1,4 @@
 //First we need some arrays of names etc...
-
 const firstNames = ['Zara', 'Tharion', 'Kira', 'Ragnor',
  'Lila', 'Nala', 'Varis', 'Mara', 'Kato', 'Elora', 'Darius', 'Sora', 'Zane', 'Fira', 'Milo',
  'Aran', 'Luna', 'Remy', 'Lyra', 'Torin'];
@@ -17,7 +16,6 @@ const monsters = ["Beholder", "Dragon", "Lich", "Mind Flayer", "Owlbear", "Gobli
 const objects = ["Sword", "Shield", "Bow", "Arrow", "Dagger", "Axe", "Hammer", "Staff", "Wand", "Ring", "Amulet", "Potion", "Scroll", "Book", "Map", "Coin", "Gem", "Key", "Chest", "Lantern"];
 
 //Second we create a randomize function
-
 const randomIterate = (Array) => {
     return(Array[Math.floor(Math.random() * Array.length)]);
 }
@@ -38,33 +36,74 @@ const randomMessage = () => {
 Create a function where we combine different syllables (up to 5 per first and last name) including double letters.
 Rule is that the first character of each first and last name need to be uppercase. I could create a loop where the amount of times it should loop is defined by a randomizer.
 If I restrict myself to a max of 5 syllables per name that would make a number between 2 and 10 characters.*/
-
 const randomName = () => {
-
+/* DISCLAIMER: I didn't want to create the function too random, otherwise the names were unreadable/unspeakble and totally silly*/
     const alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
     const extraVowels = ['a', 'e', 'i', 'o', 'u'];
     
     //Random iteration no. for name creation with min of 2 character and max of 10 chars
     const randomNum = Math.floor((Math.random() * 5));
-
+    const ranNumTwo = Math.floor((Math.random() * 5));
+    
     let newFirstName = [];
     let newLastName = [];
+    let completeName = [];
 
-   for (let i = 0; i <= randomNum; i++){
+    //First Name-Section:
+    for (let i = 0; i <= randomNum; i++){
         newFirstName.push(randomIterate(alphabet) + randomIterate(extraVowels));
     }
     
-
-    //WIP WIP WIP WIP
-    console.log(newFirstName);
-    let firstCharUp = newFirstName[0][0].toUpperCase();
-    //newFirstName.splice(0, 1, firstCharUp);
-    newFirstName.map(firstCharUp);
-    console.log(newFirstName);
+    //console.log(newFirstName);
+    //This section is supposed to transform the first character to uppercase
+    let firstCharUpFirst = newFirstName[0][0].toUpperCase() + newFirstName[0][1];
+    newFirstName.splice(0, 1, firstCharUpFirst);
+    //console.log('First Name: ' + newFirstName);
     
+    //Last Name-Section:
+    for (let j = 0; j <= ranNumTwo; j++){
+        newLastName.push(randomIterate(alphabet) + randomIterate(extraVowels));
+    }
+    
+    //This section is supposed to transform the first character to uppercase
+    let firstCharUpLast = newLastName[0][0].toUpperCase() + newLastName[0][1];
+    newLastName.splice(0, 1, firstCharUpLast);
+    newLastName.join(' ');
+    //console.log('Last Name: ' + newLastName);
 
+    //Here we join the two names (and syllable arrays) together
+    completeName.push(newFirstName.join('') + ' ' + newLastName.join(''));
+
+    return completeName;
+    /*It works!! *__* */
+}
+//console.log(randomName());
+
+//For the next challenge I need another random message with the randomName()-function
+const ranMesTwo = () => {
+    console.log(`${randomIterate(greetWord)} ${randomName()}, ${randomIterate(verbs)} the ${randomIterate(monsters)} and ${randomIterate(verbs)} the ${randomIterate(objects)}!`);
 }
 
-randomName();
+//Last Challenge
+/* Next and last challenge is to require a user input to choose if you want to have a more common name (DnD-wise) or a completely random name.
+After the user has chosen option 1 or 2, using a switch case the function will return a random message with the name choice of the user. I decided to use the Node "promt-sync" library since it
+seems to be the easiest way to get a user input for the command line. If you don't have this just copy that to the terminal: npm install prompt-sync*/
 
+const prompt = require('prompt-sync')({sigint: true});
+
+const userInput = () => {
+    let option = prompt('Greetings, traveller, pray tell me a choice if thou desire a common or a very random name for thy quest! 🗡️ Press 1 for a common name or 2 for a completely random name: ');
+    option = Number(option);
+
+    switch (option) {
+        case 1:
+        randomMessage();
+        break;
+        case 2:
+        ranMesTwo();
+        break;
+    } 
+}
+
+userInput();
 

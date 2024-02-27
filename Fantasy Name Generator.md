@@ -29,8 +29,8 @@ Additional I want to combine this with a Mixed Message Generator, where the name
 3. Create a function to create a random greeting message where the name is included //check
 
 #### Extended Scope
-4. Create a function to create a random name out of Syllables
-5. Create a message where an input is required to choose if you want a male, female, or genderless name -> Message should be like "Greetings fellow traveler, pleace chose thy sex >> Now chose if you want to have an existing name or a completely random name
+4. Create a function to create a random name out of Syllables //check
+5. Create a message where an input is required to choose if you want a more common (DnD-wise) or totally random name -> Message should be like "Greetings fellow traveler, pleace chose thy name"
 
 
 
