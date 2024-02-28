@@ -21,7 +21,6 @@ const randomIterate = (Array) => {
 }
 
 //Now we put the message together with a function
-//Example sentence would be `randomIterate(greetWord) randomIterate(firstNames) randomIterade(lastNames), randomIterade(verbs) the randomIterade(monsters) and randomIterate(verbs) the randomIterate(objects)!`
 const randomMessage = () => {
     console.log(`${randomIterate(greetWord)} ${randomIterate(firstNames)} ${randomIterate(lastNames)}, ${randomIterate(verbs)} the ${randomIterate(monsters)} and ${randomIterate(verbs)} the ${randomIterate(objects)}!`);
 }
