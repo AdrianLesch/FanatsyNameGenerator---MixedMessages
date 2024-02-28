@@ -113,12 +113,12 @@ const userInput = () => {
 To start the function again, exit terminal with Ctrl+C and type in node script.js again.*/
 
 const userInput = () => {
-    const readline = require('readline').createInterface({
-  input: process.stdin,
-  output: process.stdout
-});
+  const readline = require('readline').createInterface({
+    input: process.stdin,
+    output: process.stdout
+  });
 
-readline.question('Greetings, traveller, pray tell me a choice if thou desire a common or a very random name for thy quest! 🗡️  Press 1 for a common name or 2 for a completely random name: ', option => {
+ readline.question('Greetings, traveller, pray tell me a choice if thou desire a common or a very random name for thy quest! 🗡️  Press 1 for a common name or 2 for a completely random name: ', option => {
   option = Number(option);
     switch (option) {
         case 1:
