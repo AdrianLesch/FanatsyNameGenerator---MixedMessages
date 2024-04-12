@@ -7,6 +7,8 @@ Have fun!-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./resources/icons/icons8-witch's-hat-color-32.png" type="image/x-icon" />
+    <!--Icon from icon8-->
     <link rel="stylesheet" href="./resources/styles/style.css" type="text/css">
     <!--FONT-IMPORT-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,9 +29,16 @@ Have fun!-->
                     alt="This is a fantasy picture of sorcerers and knights fighting dragons." id="mainPic">
             </div>
             <div class="interactiveSection">
-                <h2>Greetings, traveller, pray tell me a choice if thou desire a common or a very random name for thy
-                    quest! <br>
-                    🗡️ Press 1 for a common name or 2 for a completely random name:</h2>
+                <h2>Greetings, traveller, pray tell me a choice if thou desire a common or a very random name
+                    for thy
+                    quest!🗡️</h2> 
+                    <br>
+                    <div class="inputFlex">
+                        <button onclick="buttonOne()">A COMMON NAME!</button>
+                        <button onclick="buttonTwo()">A RANDOM NAME!</button>
+                    </div>
+                    <div class="result"><span id="result"></span></div>
+                    </form>
             </div>
         </div>
     </main>

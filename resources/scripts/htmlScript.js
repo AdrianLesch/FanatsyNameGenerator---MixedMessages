@@ -84,10 +84,24 @@ const ranMesTwo = () => {
     console.log(`${randomIterate(greetWord)} ${randomName()}, ${randomIterate(verbs)} the ${randomIterate(monsters)} and ${randomIterate(verbs)} the ${randomIterate(objects)}!`);
 }
 
+
+//HTML-Function
+function buttonOne() {
+    document.getElementById("result").innerHTML = randomMessage();
+}
+
+function buttonTwo() {
+    document.getElementById("result").innerHTML = ranMesTwo();
+}
+
+
+
+
 //Last Challenge
 /* Next and last challenge is to require a user input to choose if you want to have a more common name (DnD-wise) or a completely random name.
 After the user has chosen option 1 or 2, using a switch case the function will return a random message with the name choice of the user. I decided to use the Node "promt-sync" library since it
 seems to be the easiest way to get a user input for the command line. If you don't have this, just copy that to the terminal: npm install prompt-sync*/
+/*
 const userInput = () => {
     const prompt = require('prompt-sync')({sigint: true});
     let option = prompt ('Greetings, traveller, pray tell me a choice if thou desire a common or a very random name for thy quest! 🗡️  Press 1 for a common name or 2 for a completely random name: ');
@@ -105,4 +119,4 @@ const userInput = () => {
 
 //Finally we invoke the final function of this project. Have fun! :-)
 userInput();
-
+*/
