@@ -92,6 +92,7 @@ header {
 
 
 #heading {
+    font-weight: normal;
     text-decoration: underline double .5px;
     line-height: 1.5;
 }
