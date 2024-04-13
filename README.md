@@ -42,3 +42,14 @@ Additional I want to combine this with a Mixed Message Generator, where the name
 5. Create a message where an input is required to choose if you want a more common (DnD-wise) or totally random name -> Message should be like "Greetings fellow traveler, pleace chose thy name"//check
 
 That project was a lot of fun to create, I hope that you have fun using it. :-)
+
+
+# -------------UPDATE 13th of April 2024-------------
+
+The original scope was to write only a JS-Script which you can run in the terminal.
+Since I liked my idea I decided to transform it into a HTML-Verion. You can find the final
+result on GitHub Pages, here is the sneak peek:
+![FantasyNameGenHTML](https://github.com/AdrianLesch/FanatsyNameGenerator---MixedMessages/assets/138780311/f16f1d4f-be0f-4589-ba2e-df7052f1ba6b)
+
+
+
