@@ -20,7 +20,7 @@ Have fun!-->
 
 <body>
     <header role="banner">
-        <h1 role="heading" aria-level="1">The Fantasy-Name-Generator </h1>
+        <h1 role="heading" aria-level="1" id="banner"><u>The Fantasy-Name-Generator</u></h1>
     </header>
     <main role="region">
         <div class="mainWrapper">
@@ -29,26 +29,31 @@ Have fun!-->
                     alt="This is a fantasy picture of sorcerers and knights fighting dragons." id="mainPic">
             </div>
             <div class="interactiveSection">
-                <h2>Greetings, traveller, pray tell me a choice if thou desire a common or a very random name
+                <h2 id="heading">Greetings, traveller, pray tell me a choice if thou desire a common or a very random
+                    name
                     for thy
-                    quest!🗡️</h2> 
-                    <br>
-                    <div class="inputFlex">
-                        <button onclick="buttonOne()">A COMMON NAME!</button>
-                        <button onclick="buttonTwo()">A RANDOM NAME!</button>
-                    </div>
-                    <div class="result"><span id="result"></span></div>
-                    </form>
+                    quest!🗡️</h2>
+                <br>
+                <div class="inputFlex">
+                    <button id="button1" class="button">A COMMON NAME, OH GREAT WIZARD!</button>
+                    <button id="button2" class="button">A RANDOM NAME, OH GREAT WIZARD!</button>
+                </div>
+                <div class="resultWrapper" id="resultWrapper">
+                    <div><span id="message" class="wizardMessage">Very well traveller, here is thy name and thy
+                            quest:</span></div>
+                            <br>
+                    <div class="resultBox"><span id="result" class="result"></span></div>
+                </div>
             </div>
         </div>
     </main>
     <footer role="region">
-        <p><strong>Disclaimer:</strong>This is the HTML-Version of the challenge project "Mixed-Messages" for the
-            Codecademy Fullstack Engineer Career Path. The original scope was to
-            write only a JS-Script which you can run in the terminal. Since I liked my idea if decided to transform it
+        <p id="disclaimer"><strong>Disclaimer:</strong>This is the HTML-Version of the challenge project "Mixed-Messages" for the
+            Codecademy Fullstack Engineer Career Path. <br> The original scope was to
+            write only a JS-Script which you can run in the terminal. <br> Since I liked my idea I decided to transform it
             into a HTML-Verion. Have fun!
         </p>
-        <p>&#169; Adrian Lesch</p>
+        <p>&#169; Adrian Lesch 2024</p>
     </footer>
 
     <script src="./resources/scripts/htmlScript.js"></script>
